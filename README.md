@@ -1,5 +1,10 @@
 # [Python](https://python.org/)
 
+## References
+
++ [*The Python Language Reference*](https://docs.python.org/3/reference/)
++ [*The Python Standard Library*](https://docs.python.org/3/library/)
+
 ## Programming Styles
 
 + [*Google Python Style Guide*](https://google.github.io/styleguide/pyguide)<sub> [*cmn-Hans*](http://zh-google-styleguide.readthedocs.org/)</sub>
