@@ -6,13 +6,13 @@
 def find_min_and_max(L):
     if 0 == len(L):
         return None, None
-    _min = _max = L[0]
-    for _num in L:
-        if _num < _min:
-            _min = _num
-        elif _max < _num:
-            _max = _num
-    return _min, _max
+    min = max = L[0]
+    for num in L:
+        if num < min:
+            min = num
+        elif max < num:
+            max = num
+    return min, max
 
 
 # 测试

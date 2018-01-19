@@ -3,12 +3,12 @@
 
 
 def create_counter():
-    _cnt = 0
+    cnt = 0
 
     def counter():
-        nonlocal _cnt
-        _cnt += 1
-        return _cnt
+        nonlocal cnt
+        cnt += 1
+        return cnt
 
     return counter
 

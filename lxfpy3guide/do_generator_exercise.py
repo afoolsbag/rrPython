@@ -3,11 +3,11 @@
 
 
 def triangles():
-    _list = [1, ]
+    li = [1, ]
     while True:
-        yield _list
-        _list = [0, *_list, 0]
-        _list = [_list[i] + _list[i + 1] for i in range(len(_list) - 1)]
+        yield li
+        li = [0, *li, 0]
+        li = [li[i] + li[i + 1] for i in range(len(li) - 1)]
 
 
 # 期待输出:

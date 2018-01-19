@@ -9,12 +9,12 @@ def quadratic(a, b, c):
         return '无解'
     if 0 == a:
         return -c / b
-    _delta = b * b - 4 * a * c
-    if _delta < 0:
+    delta = b * b - 4 * a * c
+    if delta < 0:
         return '无解'
-    _x1 = (-b + math.sqrt(_delta)) / (2 * a)
-    _x2 = (-b - math.sqrt(_delta)) / (2 * a)
-    return _x1, _x2
+    x1 = (-b + math.sqrt(delta)) / (2 * a)
+    x2 = (-b - math.sqrt(delta)) / (2 * a)
+    return x1, x2
 
 
 # 测试:
