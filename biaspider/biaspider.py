@@ -8,6 +8,7 @@ Src: http://istartedsomething.com/bingimages
 
 from datetime import date as Date, timedelta as TimeDelta
 from enum import Enum
+# from optparse import OptionParser
 from os import path
 from pyquery import PyQuery
 from time import sleep
@@ -18,16 +19,16 @@ __author__ = 'zhengrr'
 
 
 class Country(Enum):
-    au = 'au'  # Australia
-    br = 'br'  # Brazil
-    ca = 'ca'  # Canada
-    cn = 'cn'  # China
-    de = 'de'  # Germany
-    fr = 'fr'  # France
-    jp = 'jp'  # Japan
-    nz = 'nz'  # New Zealand
-    uk = 'gb'  # United Kingdom
-    us = 'us'  # United States
+    AUSTRALIA = 'au'
+    BRAZIL = 'br'
+    CANADA = 'ca'
+    CHINA = 'cn'
+    GERMANY = 'de'
+    FRANCE = 'fr'
+    JAPAN = 'jp'
+    NEW_ZEALAND = 'nz'
+    UNITED_KINGDOM = 'gb'
+    UNITED_STATES = 'us'
 
 
 def gen_biaurl(date):
@@ -117,11 +118,20 @@ def save_allimg_from_bia(cntry, dir='', *, start=Date(2009, 5, 25), intvl=5.0):
 
     date = start
     while date <= Date.today():
-        print('Try saving %s cn...' % date.isoformat())
+        print('Try saving %s %s...' % (date.isoformat(), cntry.value))
         save_img_from_bia(date, cntry, dir)
         sleep(intvl)
         date += TimeDelta(days=1)
 
 
 if __name__ == '__main__':
-    save_allimg_from_bia(Country.cn, 'bia', start=Date(2013, 12, 21))
+    # parser = OptionParser()
+    # parser.add_option('-c', '--country', dest='Choose one: ' + ' '.join(e.value for e in Country), default='cn')
+    # parser.add_option("-d", "--directory", dest="Image save directory",
+    #                   help="write report to FILE", metavar="FILE")
+    # parser.add_option("-q", "--quiet",
+    #                   action="store_false", dest="verbose", default=True,
+    #                   help="don't print status messages to stdout")
+    #
+    # (options, args) = parser.parse_args()
+    save_allimg_from_bia(Country.CHINA, 'bia', start=Date(2014, 9, 14))
