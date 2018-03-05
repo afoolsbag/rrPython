@@ -134,4 +134,4 @@ if __name__ == '__main__':
     #                   help="don't print status messages to stdout")
     #
     # (options, args) = parser.parse_args()
-    save_allimg_from_bia(Country.CHINA, 'bia', start=Date(2014, 9, 14))
+    save_allimg_from_bia(Country.CHINA, 'bia', start=Date(2018, 2, 5))
