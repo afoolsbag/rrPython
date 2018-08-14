@@ -1,6 +1,6 @@
 # Python in zhengrr's eyes
 
-[Python](https://python.org)(1991)
+[*Python*](https://python.org) (1991)
 
 ["Does Python suck? Why or Why not?"](https://quora.com/Does-Python-suck-Why-or-Why-not). *Quora*.
 
