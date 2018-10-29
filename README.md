@@ -9,7 +9,7 @@
 
 ## 风格
 
-[*Google Python Style Guide*](https://google.github.io/styleguide/pyguide)<sub> [*cmn-Hans*](http://zh-google-styleguide.readthedocs.org)</sub>
+[*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
 
 ## 指南
 
