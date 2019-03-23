@@ -1,15 +1,17 @@
 # zhengrr 所知的 Python
 
-[*Python*](https://python.org) (1991)
+人生苦短，我用 [*Python*](https://python.org "Python, 1991")。
 
 ## 参考
 
-/ [*The Python Language Reference*](https://docs.python.org/3/reference)
-/ [*The Python Standard Library*](https://docs.python.org/3/library)
+[*Python 3 Docs*](https://docs.python.org/3/ "Python 3 documentation") <sub>(
+  [*lang*](https://docs.python.org/3/reference "The Python Language Reference"),
+  [*lib*](https://docs.python.org/3/library "The Python Standard Library") )</sub>
 
 ## 风格
 
-[*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
+/ [*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
+/ [*PEP 257 -- Docstring Conventions*](https://python.org/dev/peps/pep-0257/)
 
 ## 指南
 
