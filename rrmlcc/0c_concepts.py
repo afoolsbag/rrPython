@@ -73,24 +73,15 @@ TensorFlow 编程本质上是一个两步流程：
 """
 
 import tensorflow as tf
-import unittest as ut
 
+g = tf.Graph()
+with g.as_default():
+    x = tf.constant(8, name='x_const')
+    y = tf.constant(5, name='y_const')
+    sum_xy = tf.add(x, y, name='x_y_sum')
 
-class TestConcepts(ut.TestCase):
+    z = tf.constant(4, name='z_const')
+    sum_xyz = tf.add(sum_xy, z, name='x_y_z_sum')
 
-    def test_concepts(self):
-        g = tf.Graph()
-        with g.as_default():
-            x = tf.constant(8, name='x_const')
-            y = tf.constant(5, name='y_const')
-            sum_xy = tf.add(x, y, name='x_y_sum')
-
-            z = tf.constant(4, name='z_const')
-            sum_xyz = tf.add(sum_xy, z, name='x_y_z_sum')
-
-            with tf.Session():
-                print(sum_xyz.eval())
-
-
-if __name__ == '__main__':
-    ut.main()
+    with tf.Session():
+        print(sum_xyz.eval())
