@@ -2,22 +2,7 @@
 # coding: utf-8
 
 """
-线性回归::
-
-    y' = b + w1*x1 + w2*x2 ... + wn*xn
-    y': 预测标签（理想输出值）
-    b : 偏差
-    wn: 权重 n（特征 n 的权重）
-    xn: 特征 n
-
-损失
-  损失是一个数值，表示对于单个样本而言模型预测的准确程度。
-
-经验风险最小化
-  在监督式机器学习中，检查多个样本并尝试找出可最大限度地减少损失的模型。
-
-损失函数
-  平方损失（L2 损失），均方误差（MSE）。
-  虽然 MSE 常用于机器学习，但它既不是唯一实用的损失函数，也不是适用于所有情形的最佳损失函数。
-
+- `深入了解机器学习 <https://developers.google.com/machine-learning/crash-course/descending-into-ml/video-lecture>`_
+- `线性回归 <https://developers.google.com/machine-learning/crash-course/descending-into-ml/linear-regression>`_
+- `训练与损失 <https://developers.google.com/machine-learning/crash-course/descending-into-ml/training-and-loss>`_
 """

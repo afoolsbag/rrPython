@@ -2,9 +2,9 @@
 # coding: utf-8
 
 """
-**学习目标**：
+- `前提条件和准备工作 <https://developers.google.com/machine-learning/crash-course/prereqs-and-prework>`_
 
-- 运行 TensorFlow 程序
+- `准备工作：Hello World <https://colab.research.google.com/notebooks/mlcc/hello_world.ipynb>`_
 """
 
 import tensorflow as tf
