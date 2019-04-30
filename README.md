@@ -22,7 +22,8 @@
 
 ## Awesome
 
-[*Awesome Python*](https://awesome-python.com/)<sub> [*cmn-Hans*](http://python.jobbole.com/84464)</sub>
+[*Awesome Python*](https://awesome-python.com/) <sub>(
+  [*cmn-Hans*](http://python.jobbole.com/84464) )</sub>
 
 / [*Matplotlib*](https://matplotlib.org/)
 / [*NumPy*](https://numpy.org/)
