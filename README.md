@@ -1,5 +1,7 @@
 # zhengrr 所知的 Python
 
+> [![Should You Learn Python, C, or Ruby to Be a Top Coder?](./README-IMG.jpg)](https://byrslf.co/188a5bdc9f54 "Should You Learn Python, C, or Ruby to Be a Top Coder?")
+
 人生苦短，我用 [*Python*](https://python.org "Python, 1991")。
 
 ## 参考
@@ -29,6 +31,8 @@
 / [*SymPy*](https://sympy.org/)
 
 ## 许可
+
+项目采用 Unlicense 许可，文档采用 CC0-1.0 许可：
 
 <p xmlns:dct="https://purl.org/dc/terms/">
   <a rel="license"
