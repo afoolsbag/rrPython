@@ -4,6 +4,8 @@
 
 人生苦短，我用 [*Python*](https://python.org "Python, 1991")。
 
+*Guido van Rossum*
+
 ## 参考
 
 [*Python 3 Docs*](https://docs.python.org/3/ "Python 3 documentation") <sub>(
@@ -13,7 +15,11 @@
 ## 风格
 
 / [*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
+/ [*PEP 224 -- Attribute Docstrings*](https://python.org/dev/peps/pep-0224/)
 / [*PEP 257 -- Docstring Conventions*](https://python.org/dev/peps/pep-0257/)
+/ [*Sphinx*](https://www.sphinx-doc.org/) <sub>(
+    [*Sphinx and RST syntax guide*](https://thomas-cokelaer.info/tutorials/sphinx/) )</sub>
+/ [*reStructuredText*](http://docutils.sourceforge.net/rst.html)
 
 ## 指南
 
