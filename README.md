@@ -31,9 +31,12 @@
 [*Awesome Python*](https://awesome-python.com/) <sub>(
   [*cmn-Hans*](http://python.jobbole.com/84464) )</sub>
 
-/ [*Matplotlib*](https://matplotlib.org/)
-/ [*NumPy*](https://numpy.org/)
-/ [*pandas*](https://pandas.pydata.org/)
+/ [*Matplotlib*](https://matplotlib.org/) <sub>(
+    [*cmn-Hans*](https://matplotlib.org.cn/) )</sub>
+/ [*NumPy*](https://numpy.org/) <sub>(
+    [*cmn-Hans*](https://numpy.org.cn/) )</sub>
+/ [*pandas*](https://pandas.pydata.org/) <sub>(
+    [*cmn-Hans*](https://pypandas.cn/) )</sub>
 / [*SciPy*](https://scipy.org/)
 / [*SymPy*](https://sympy.org/)
 
