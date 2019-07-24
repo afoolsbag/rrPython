@@ -10,16 +10,19 @@
 
 [*Python 3 Docs*](https://docs.python.org/3/ "Python 3 documentation") <sub>(
   [*lang*](https://docs.python.org/3/reference "The Python Language Reference"),
-  [*lib*](https://docs.python.org/3/library "The Python Standard Library") )</sub>
+  [*lib*](https://docs.python.org/3/library "The Python Standard Library"),
+  [*doc*](https://docs.python.org/3.1/documenting/ "Documenting Python"))</sub>
+
+[*Sphinx*](https://www.sphinx-doc.org/) <sub>(
+  [*Sphinx and RST syntax guide*](https://thomas-cokelaer.info/tutorials/sphinx/) )</sub>
+
+[*reStructuredText*](http://docutils.sourceforge.net/rst.html)
 
 ## 风格
 
 / [*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
 / [*PEP 224 -- Attribute Docstrings*](https://python.org/dev/peps/pep-0224/)
 / [*PEP 257 -- Docstring Conventions*](https://python.org/dev/peps/pep-0257/)
-/ [*Sphinx*](https://www.sphinx-doc.org/) <sub>(
-    [*Sphinx and RST syntax guide*](https://thomas-cokelaer.info/tutorials/sphinx/) )</sub>
-/ [*reStructuredText*](http://docutils.sourceforge.net/rst.html)
 
 ## 指南
 
