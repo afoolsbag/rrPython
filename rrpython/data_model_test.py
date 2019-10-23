@@ -41,7 +41,7 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertTrue(eg)
 
     def test_integer(self):
-        """数字＞整数＞整型
+        """数字－整数－整型
 
         Python 中整型没有大小限制。
         """
@@ -58,7 +58,7 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertEqual(1, 10 % 3)
 
     def test_boolean(self):
-        """数字＞整数＞布尔型"""
+        """数字－整数－布尔型"""
         false: bool = False
         self.assertFalse(false)
         true: bool = True
@@ -69,7 +69,7 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertFalse(not True)
 
     def test_real(self):
-        """数字＞实数（浮点型）
+        """数字－实数（浮点型）
 
         Python 中使用双精度浮点数存储实数。
         """
@@ -79,14 +79,14 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertTrue(nonzero)
 
     def test_complex(self):
-        """数字＞复数（双重浮点型）"""
+        """数字－复数（双重浮点型）"""
         zero: complex = 0j
         self.assertFalse(zero)
         nonzero: complex = 1j
         self.assertTrue(nonzero)
 
     def test_string(self):
-        """序列＞不变序列＞字符串"""
+        """序列－不变序列－字符串"""
         empty: str = ''
         self.assertFalse(empty)
         nonempty: str = '1337'
@@ -98,7 +98,7 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertEqual(3, len('ABC'))
 
     def test_tuple(self):
-        """序列＞不变序列＞元组"""
+        """序列－不变序列－元组"""
         empty: tuple = ()
         self.assertFalse(empty)
         nonempty: tuple = (1,)
@@ -123,7 +123,7 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertEqual(9, next(gen))
 
     def test_bytes(self):
-        """序列＞不变序列＞字节串"""
+        """序列－不变序列－字节串"""
         empty: bytes = b''
         self.assertFalse(empty)
         nonempty: bytes = b'1337'
@@ -138,7 +138,7 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertEqual('ABC, XYZ', '{0}, {1}'.format('ABC', 'XYZ'))
 
     def test_list(self):
-        """序列＞可变序列＞列表"""
+        """序列－可变序列－列表"""
         empty: list = []
         self.assertFalse(empty)
         nonempty: list = [1, 3, 3, 7]
@@ -149,14 +149,14 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertListEqual([1, 4, 9], [x ** 2 for x in range(1, 4)])
 
     def test_bytearray(self):
-        """序列＞可变序列＞字节数组"""
+        """序列－可变序列－字节数组"""
         empty: bytearray = bytearray(b'')
         self.assertFalse(empty)
         nonempty: bytearray = bytearray(b'1337')
         self.assertTrue(nonempty)
 
     def test_set(self):
-        """集合＞集合"""
+        """集合－集合"""
         empty: set = set()
         self.assertFalse(empty)
         nonempty: set = {1, 3, 3, 7}
@@ -167,14 +167,14 @@ class TestTheStandardTypeHierarchy(unittest.TestCase):
         self.assertSetEqual({1, 3, 7}, {1, 3} | {3, 7})
 
     def test_frozenset(self):
-        """集合＞冻结集合"""
+        """集合－冻结集合"""
         empty: frozenset = frozenset()
         self.assertFalse(empty)
         nonempty: frozenset = frozenset({1, 3, 3, 7})
         self.assertTrue(nonempty)
 
     def test_dictionary(self):
-        """映射＞字典
+        """映射－字典
 
         Python 中字典的 Key 必须是不变对象
         """
