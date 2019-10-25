@@ -27,6 +27,7 @@
 ## 指南
 
 / [“Python教程”](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000). *廖雪峰的官方网站*.
+/ [*床长人工智能教程*](https://captainbed.net/)
 / [“机器学习速成课程”](https://developers.google.cn/machine-learning/crash-course/). *Google Developers*.
 
 ## Awesome
