@@ -1,56 +1,54 @@
 # zhengrr 所知的 Python
 
-> [![Should You Learn Python, C, or Ruby to Be a Top Coder?](./README-IMG.jpg)](https://byrslf.co/188a5bdc9f54 "Should You Learn Python, C, or Ruby to Be a Top Coder?")
-
 人生苦短，我用 [*Python*](https://python.org "Python, 1991")。
 
-*Guido van Rossum*
+Guido van Rossum（吉多·范·罗苏姆）
 
 ## 参考
 
 [*Python 3 Docs*](https://docs.python.org/3/ "Python 3 documentation") <sub>
-  [*lang*](https://docs.python.org/3/reference "The Python Language Reference"),
-  [*lib*](https://docs.python.org/3/library "The Python Standard Library"),
-  [*doc*](https://docs.python.org/3.1/documenting/ "Documenting Python") </sub>
+    [*lang*](https://docs.python.org/3/reference "The Python Language Reference"),
+    [*lib*](https://docs.python.org/3/library "The Python Standard Library"),
+    [*doc*](https://docs.python.org/3.1/documenting/ "Documenting Python") </sub>
 
 [*Sphinx*](https://www.sphinx-doc.org/) <sub>
-  [*Sphinx and RST syntax guide*](https://thomas-cokelaer.info/tutorials/sphinx/) </sub>
+    [*Sphinx and RST syntax guide*](https://thomas-cokelaer.info/tutorials/sphinx/) </sub>
 
 [*reStructuredText*](http://docutils.sourceforge.net/rst.html)
 
 ## 风格
 
-/ [*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
-/ [*PEP 224 -- Attribute Docstrings*](https://python.org/dev/peps/pep-0224/)
-/ [*PEP 257 -- Docstring Conventions*](https://python.org/dev/peps/pep-0257/)
+*   [*PEP 8 -- Style Guide for Python Code*](https://python.org/dev/peps/pep-0008/)
+*   [*PEP 224 -- Attribute Docstrings*](https://python.org/dev/peps/pep-0224/)
+*   [*PEP 257 -- Docstring Conventions*](https://python.org/dev/peps/pep-0257/)
 
 ## 指南
 
-/ [“Python教程”](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000). *廖雪峰的官方网站*.
-/ [*床长人工智能教程*](https://captainbed.net/)
-/ [“机器学习速成课程”](https://developers.google.cn/machine-learning/crash-course/). *Google Developers*.
+*   [“Python教程”](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000). *廖雪峰的官方网站*.
+*   [*床长人工智能教程*](https://captainbed.net/)
+*   [“机器学习速成课程”](https://developers.google.cn/machine-learning/crash-course/). *Google Developers*.
 
 ## Awesome
 
 [*Awesome Python*](https://awesome-python.com/) <sub>
-  [*cmn-Hans*](http://python.jobbole.com/84464) </sub>
+    [*cmn-Hans*](http://python.jobbole.com/84464) </sub>
 
-/ [*Matplotlib*](https://matplotlib.org/) <sub>
-    [*cmn-Hans*](https://matplotlib.org.cn/) </sub>
-/ [*NumPy*](https://numpy.org/) <sub>
-    [*cmn-Hans*](https://numpy.org.cn/) </sub>
-/ [*pandas*](https://pandas.pydata.org/) <sub>
-    [*cmn-Hans*](https://pypandas.cn/) </sub>
-/ [*pipenv*](https://pypi.org/project/pipenv/)
-/ [*PyCharm*](https://jetbrains.com/pycharm "一款集成开发环境") <sub>
-    [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm) </sub>
-/ [*PyTorch*](https://pytorch.org/) <sub>
-    [*man cmn-Hans*](https://github.com/zergtant/pytorch-handbook),
-    [*doc cmn-Hans*](https://pytorch-cn.readthedocs.io/zh/latest/) </sub>
-/ [*SciPy*](https://scipy.org/)
-/ [*SymPy*](https://sympy.org/)
-/ [*TensorFlow*](https://tensorflow.google.cn) <sub>
-    [*cmn-Hans*](http://tensorfly.cn/) </sub>
+| [*Matplotlib*](https://matplotlib.org/) <sub>
+      [*cmn-Hans*](https://matplotlib.org.cn/) </sub>
+| [*NumPy*](https://numpy.org/) <sub>
+      [*cmn-Hans*](https://numpy.org.cn/) </sub>
+| [*pandas*](https://pandas.pydata.org/) <sub>
+      [*cmn-Hans*](https://pypandas.cn/) </sub>
+| [*pipenv*](https://pypi.org/project/pipenv/)
+| [*PyCharm*](https://jetbrains.com/pycharm "一款集成开发环境") <sub>
+      [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm) </sub>
+| [*PyTorch*](https://pytorch.org/) <sub>
+      [*man cmn-Hans*](https://github.com/zergtant/pytorch-handbook),
+      [*doc cmn-Hans*](https://pytorch-cn.readthedocs.io/zh/latest/) </sub>
+| [*SciPy*](https://scipy.org/)
+| [*SymPy*](https://sympy.org/)
+| [*TensorFlow*](https://tensorflow.google.cn) <sub>
+      [*cmn-Hans*](http://tensorfly.cn/) </sub>
 
 ## 许可
 
