@@ -4,6 +4,27 @@
 
 Guido van Rossum（吉多·范·罗苏姆）
 
+```cmder
+%USERPROFILE% λ python <script.py>  # 运行脚本
+%USERPROFILE% λ python              # 交互式 Python 壳层
+
+%USERPROFILE% λ pip config list                   # 列出配置
+%USERPROFILE% λ pip config --global list          # 列出系统配置
+%USERPROFILE% λ pip config --user list            # 列出用户配置
+%USERPROFILE% λ pip config --site list            # 列出项目配置
+%USERPROFILE% λ pip config --editor=notepad edit  # 编辑配置
+%USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
+
+%USERPROFILE% λ python --mod pip install --upgrade pip  # 升级 pip
+:: abbr.        python -m pip install -U pip
+%USERPROFILE% λ pip list                                # 列出已安装的包
+%USERPROFILE% λ pip search <package>                    # 搜索 PyPI
+%USERPROFILE% λ pip install <package>                   # 安装包
+%USERPROFILE% λ pip install --upgrade <package>         # 升级包
+:: abbr.        pip install -U <package>
+%USERPROFILE% λ pip uninstall <package>                 # 卸载包
+```
+
 ## 参考
 
 [*Python 3 Docs*](https://docs.python.org/3/ "Python 3 documentation") <sub>
