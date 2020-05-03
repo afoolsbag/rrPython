@@ -20,7 +20,9 @@ Guido van Rossum（吉多·范·罗苏姆）
 %USERPROFILE% λ pip config --user list                  :: 列出用户配置
 %USERPROFILE% λ pip config --site list                  :: 列出项目配置
 %USERPROFILE% λ pip config --editor=notepad edit        :: 编辑配置
-:: %USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
+
+%USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
+
 %USERPROFILE% λ python --mod pip install --upgrade pip  :: 升级 pip
 :: abbr.        python -m pip install -U pip
 %USERPROFILE% λ pip list                                :: 列出已安装的包
