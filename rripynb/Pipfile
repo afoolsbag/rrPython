@@ -1,0 +1,13 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.doubanio.com/simple"
+verify_ssl = true
+
+[dev-packages]
+notebook = "*"
+jupyter = "*"
+
+[packages]
+
+[requires]
+python_version = "3"
