@@ -5,16 +5,22 @@
 Guido van Rossum（吉多·范·罗苏姆）
 
 ```cmder
-%USERPROFILE% λ python <script.py>  :: 运行脚本
-%USERPROFILE% λ python              :: 交互式 Python 壳层
+:: 环境
+:: https://github.com/pyenv/pyenv
+:: https://github.com/pyenv-win/pyenv-win
 
-%USERPROFILE% λ pip config list                   :: 列出配置
-%USERPROFILE% λ pip config --global list          :: 列出系统配置
-%USERPROFILE% λ pip config --user list            :: 列出用户配置
-%USERPROFILE% λ pip config --site list            :: 列出项目配置
-%USERPROFILE% λ pip config --editor=notepad edit  :: 编辑配置
-%USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
+:: 运行
+%USERPROFILE% λ python <script.py>   :: 运行脚本
+%USERPROFILE% λ pip install ipython
+%USERPROFILE% λ ipython              :: 交互式 Python 壳层
 
+:: 包管理器
+%USERPROFILE% λ pip config list                         :: 列出配置
+%USERPROFILE% λ pip config --global list                :: 列出系统配置
+%USERPROFILE% λ pip config --user list                  :: 列出用户配置
+%USERPROFILE% λ pip config --site list                  :: 列出项目配置
+%USERPROFILE% λ pip config --editor=notepad edit        :: 编辑配置
+:: %USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
 %USERPROFILE% λ python --mod pip install --upgrade pip  :: 升级 pip
 :: abbr.        python -m pip install -U pip
 %USERPROFILE% λ pip list                                :: 列出已安装的包
@@ -24,9 +30,19 @@ Guido van Rossum（吉多·范·罗苏姆）
 :: abbr.        pip install -U <package>
 %USERPROFILE% λ pip uninstall <package>                 :: 卸载包
 
-:: 升级 Python
-:: https://github.com/pyenv/pyenv
-:: https://github.com/pyenv-win/pyenv-win
+:: 环境管理器
+%USERPROFILE% λ pip install pipenv
+%USERPROFILE% λ pipenv --python <3>
+%USERPROFILE% λ pipenv install [--dev] <package>
+:: arrb.        pipenv install [-d] <package>
+%USERPROFILE% λ pipenv uninstall <package>
+%USERPROFILE% λ pipenv lock
+%USERPROFILE% λ pipenv sync
+%USERPROFILE% λ pipenv run python <script.py>
+
+:: Jupyter Notebook
+%USERPROFILE% λ pip install jupyter notebook
+%USERPROFILE% λ jupyter notebook [script.ipynb]
 ```
 
 ## 参考
@@ -58,22 +74,24 @@ Guido van Rossum（吉多·范·罗苏姆）
 [*Awesome Python*](https://awesome-python.com/) <sub>
     [*cmn-Hans*](http://python.jobbole.com/84464) </sub>
 
-| [*Matplotlib*](https://matplotlib.org/) <sub>
-      [*cmn-Hans*](https://matplotlib.org.cn/) </sub>
-| [*NumPy*](https://numpy.org/) <sub>
-      [*cmn-Hans*](https://numpy.org.cn/) </sub>
-| [*pandas*](https://pandas.pydata.org/) <sub>
-      [*cmn-Hans*](https://pypandas.cn/) </sub>
-| [*pipenv*](https://pypi.org/project/pipenv/)
-| [*PyCharm*](https://jetbrains.com/pycharm "一款集成开发环境") <sub>
-      [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm) </sub>
-| [*PyTorch*](https://pytorch.org/) <sub>
-      [*man cmn-Hans*](https://github.com/zergtant/pytorch-handbook),
-      [*doc cmn-Hans*](https://pytorch-cn.readthedocs.io/zh/latest/) </sub>
-| [*SciPy*](https://scipy.org/)
-| [*SymPy*](https://sympy.org/)
-| [*TensorFlow*](https://tensorflow.google.cn) <sub>
-      [*cmn-Hans*](http://tensorfly.cn/) </sub>
+*   [*Jupyter*](https://jupyter.org/)
+*   [*Matplotlib*](https://matplotlib.org/) <sub>
+        [*cmn-Hans*](https://matplotlib.org.cn/) </sub>
+*   [*NumPy*](https://numpy.org/) <sub>
+        [*cmn-Hans*](https://numpy.org.cn/) </sub>
+*   [*pandas*](https://pandas.pydata.org/) <sub>
+        [*cmn-Hans*](https://pypandas.cn/) </sub>
+*   [*pipenv*](https://pypi.org/project/pipenv/)
+*   [*PyCharm*](https://jetbrains.com/pycharm "一款集成开发环境") <sub>
+        [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm) </sub>
+*   [*pytest*](https://pytest.org/)
+*   [*PyTorch*](https://pytorch.org/) <sub>
+        [*man cmn-Hans*](https://github.com/zergtant/pytorch-handbook),
+        [*doc cmn-Hans*](https://pytorch-cn.readthedocs.io/zh/latest/) </sub>
+*   [*SciPy*](https://scipy.org/)
+*   [*SymPy*](https://sympy.org/)
+*   [*TensorFlow*](https://tensorflow.google.cn) <sub>
+        [*cmn-Hans*](http://tensorfly.cn/) </sub>
 
 ## 许可
 
