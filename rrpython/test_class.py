@@ -5,10 +5,9 @@ __author__ = 'zhengrr'
 
 from enum import Enum
 from typing import Any
-import unittest
 
 
-class MyClass:
+class MyClass(object):
     """类示例，默认继承自 ``object``"""
 
     __static_field: Any = None
@@ -45,11 +44,6 @@ class MyEnum(Enum):
     Jt = 'Jt'
 
 
-class TestClass(unittest.TestCase):
-    def test_instance(self):
-        inst = MyClass()
-        self.assertIsNone(inst.field)
-
-
-if __name__ == '__main__':
-    unittest.main()
+def test_instance():
+    inst = MyClass()
+    assert inst.field is None
