@@ -1,0 +1,16 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.doubanio.com/simple"
+verify_ssl = true
+
+[dev-packages]
+notebook = "*"
+jupyter = "*"
+
+[packages]
+ipympl = "*"
+matplotlib = "*"
+numpy = "*"
+
+[requires]
+python_version = "3"
