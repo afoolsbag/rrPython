@@ -4,29 +4,24 @@ SETLOCAL ENABLEEXTENSIONS
 SET script_directory=%~dp0
 
 WHERE /Q pipenv ^
-        || ECHO The pipenv executable not found. && ^
-           CALL :pause_if_double_click && ^
-           EXIT /B 1
+        || ECHO The pipenv executable not found. ^
+        && CALL :pause_if_double_click ^
+        && EXIT /B 1
 
 CD %script_directory% ^
-        || ECHO Change directory to project directory failed. && ^
-           CALL :pause_if_double_click && ^
-           EXIT /B 2
+        || ECHO Change directory to project directory failed. ^
+        && CALL :pause_if_double_click ^
+        && EXIT /B 2
 
-pipenv lock ^
-        || ECHO Generates Pipfile.lock failed. && ^
-           CALL :pause_if_double_click && ^
-           EXIT /B 3
-
-pipenv sync ^
-        || ECHO Installs dependencies failed. && ^
-           CALL :pause_if_double_click && ^
-           EXIT /B 4
+pipenv update ^
+        || ECHO Updates dependencies failed. ^
+        && CALL :pause_if_double_click ^
+        && EXIT /B 3
 
 pipenv run pytest ^
-        || ECHO Run pytest failed. && ^
-           CALL :pause_if_double_click && ^
-           EXIT /B 5
+        || ECHO Run pytest failed. ^
+        && CALL :pause_if_double_click ^
+        && EXIT /B 4
 
 CALL :pause_if_double_click
 EXIT /B 0
