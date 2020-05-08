@@ -4,11 +4,9 @@ url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
 
 [packages]
-ipympl = "*"
 jupyter = "*"
-matplotlib = "*"
 notebook = "*"
-numpy = "*"
+tensorflow = "*"
 
 [requires]
 python_version = "3"

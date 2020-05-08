@@ -1,20 +1,13 @@
-# Just used for PyCharm root Jupyter service
-
 [[source]]
 name = "pypi"
 url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
 
 [packages]
-ipympl = "*"
 jupyter = "*"
-matplotlib = "*"
 notebook = "*"
-numpy = "*"
-pandas = "*"
-tensorflow = "*"
 torch = "https://download.pytorch.org/whl/cpu/torch-1.5.0%2Bcpu-cp37-cp37m-win_amd64.whl"
 torchvision = "https://download.pytorch.org/whl/cpu/torchvision-0.6.0%2Bcpu-cp37-cp37m-win_amd64.whl"
 
 [requires]
-python_version = "3"
+python_version = "3.7"

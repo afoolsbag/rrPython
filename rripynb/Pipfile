@@ -3,11 +3,10 @@ name = "pypi"
 url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
 
-[dev-packages]
-notebook = "*"
-jupyter = "*"
-
 [packages]
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
+notebook = "*"
 
 [requires]
 python_version = "3"
