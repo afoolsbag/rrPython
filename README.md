@@ -1,51 +1,6 @@
 # zhengrr 所知的 Python
 
-人生苦短，我用 [*Python*](https://python.org "Python, 1991")。
-
-Guido van Rossum（吉多·范·罗苏姆）
-
-```cmder
-:: 环境
-:: https://github.com/pyenv/pyenv
-:: https://github.com/pyenv-win/pyenv-win
-
-:: 运行
-%USERPROFILE% λ python <script.py>   :: 运行脚本
-%USERPROFILE% λ pip install ipython
-%USERPROFILE% λ ipython              :: 交互式 Python 壳层
-
-:: 包管理器
-%USERPROFILE% λ pip config list                      :: 列出配置
-%USERPROFILE% λ pip config --global list             :: 列出系统配置
-%USERPROFILE% λ pip config --user list               :: 列出用户配置
-%USERPROFILE% λ pip config --site list               :: 列出项目配置
-%USERPROFILE% λ pip config --editor=notepad edit     :: 编辑配置
-
-%USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
-
-%USERPROFILE% λ python -m pip install --upgrade pip  :: 升级 pip
-:: abbr.        python -m pip install -U pip
-%USERPROFILE% λ pip list                             :: 列出已安装的包
-%USERPROFILE% λ pip search <package>                 :: 搜索 PyPI
-%USERPROFILE% λ pip install <package>                :: 安装包
-%USERPROFILE% λ pip install --upgrade <package>      :: 升级包
-:: abbr.        pip install -U <package>
-%USERPROFILE% λ pip uninstall <package>              :: 卸载包
-
-:: 环境管理器
-%USERPROFILE% λ pip install pipenv
-%USERPROFILE% λ pipenv <--three | --two>
-%USERPROFILE% λ pipenv install [--dev] <package>
-:: arrb.        pipenv install [-d] <package>
-%USERPROFILE% λ pipenv uninstall <package>
-%USERPROFILE% λ pipenv lock
-%USERPROFILE% λ pipenv sync
-%USERPROFILE% λ pipenv run python <script.py>
-
-:: Jupyter Notebook
-%USERPROFILE% λ pip install jupyter notebook
-%USERPROFILE% λ jupyter notebook [script.ipynb]
-```
+官网 <https://python.org/>，Python 始于 1991 年，最初由 Guido van Rossum（吉多·范·罗苏姆）创作。
 
 ## 参考
 
@@ -67,7 +22,7 @@ Guido van Rossum（吉多·范·罗苏姆）
 
 ## 指南
 
-*   [“Python教程”](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000). *廖雪峰的官方网站*.
+*   廖雪峰的官方网站上的 [*Python 教程*](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000)
 *   [*床长人工智能教程*](https://captainbed.net/)
 *   [“机器学习速成课程”](https://developers.google.cn/machine-learning/crash-course/). *Google Developers*.
 
@@ -95,6 +50,91 @@ Guido van Rossum（吉多·范·罗苏姆）
 *   [*SymPy*](https://sympy.org/)
 *   [*TensorFlow*](https://tensorflow.google.cn) <sub>
         [*cmn-Hans*](http://tensorfly.cn/) </sub>
+
+### Python 运行时 CPython
+
+```cmder
+:: 使用 Scoop 安装 CPython
+%USERPROFILE% λ scoop install python
+
+:: 交互式 Python 壳层
+%USERPROFILE% λ pip install ipython
+%USERPROFILE% λ ipython
+
+:: 运行 Python 脚本
+%USERPROFILE% λ python <script.py>
+```
+
+### Python 包管理器 pip
+
+[*PyPI 官网*](https://pypi.org/)。
+
+```cmder
+:: 列出配置
+%USERPROFILE% λ pip config list
+
+:: 列出系统配置
+%USERPROFILE% λ pip config --global list
+
+:: 列出用户配置
+%USERPROFILE% λ pip config --user list
+
+:: 列出项目配置
+%USERPROFILE% λ pip config --site list
+
+:: 编辑配置
+%USERPROFILE% λ pip config --editor=notepad edit
+
+:: 配置豆瓣镜像
+%USERPROFILE% λ pip config set global.index-url https://pypi.doubanio.com/simple
+
+:: 升级 pip
+%USERPROFILE% λ python -m pip install --upgrade pip
+:: abbr.        python -m pip install -U pip
+
+:: 列出已安装的包
+%USERPROFILE% λ pip list
+
+:: 搜索 PyPI
+%USERPROFILE% λ pip search <package>
+
+:: 安装包
+%USERPROFILE% λ pip install <package>
+
+:: 升级包
+%USERPROFILE% λ pip install --upgrade <package>
+:: abbr.        pip install -U <package>
+
+:: 卸载包
+%USERPROFILE% λ pip uninstall <package>
+```
+
+### Python 环境管理器 Pipenv
+
+```
+%USERPROFILE% λ pip install pipenv
+
+%USERPROFILE% λ pipenv {--three | --two}
+
+%USERPROFILE% λ pipenv install [--dev] <package>
+:: abbr.        pipenv install [-d] <package>
+
+%USERPROFILE% λ pipenv uninstall <package>
+
+%USERPROFILE% λ pipenv lock
+
+%USERPROFILE% λ pipenv sync
+
+%USERPROFILE% λ pipenv run python <script.py>
+```
+
+### Jupyter Notebook
+
+```cmder
+%USERPROFILE% λ pip install jupyter notebook
+
+%USERPROFILE% λ jupyter notebook [script.ipynb]
+```
 
 ## 许可
 
