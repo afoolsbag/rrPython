@@ -1,10 +1,10 @@
 [[source]]
-name = "pypi"
-url = "https://pypi.doubanio.com/simple"
+name = 'pypi'
+url = 'https://pypi.doubanio.com/simple'
 verify_ssl = true
 
 [packages]
-pytest = "*"
+pytest = '*'
 
 [requires]
-python_version = "3"
+python_version = '3'

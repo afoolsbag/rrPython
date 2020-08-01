@@ -306,3 +306,4 @@ Pipfile.lock
 
 /.idea/
 /doc/_build/
+/Pipfile

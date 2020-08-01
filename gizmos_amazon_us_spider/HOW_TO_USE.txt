@@ -1,0 +1,29 @@
+1. 安装 Python 环境和支持
+
+    a. 访问 Python 官网 https://www.python.org/downloads/ 下载并安装 Python；
+
+    b. 打开命令提示符（CMD），依次输入以下命令，验证 python 和 pip 安装成功：
+
+        python --version
+        pip --version
+
+    c. 输入以下命令，将 pip 索引配置为豆瓣镜像源，提高包的下载速度：
+
+        pip config set global.index-url https://pypi.doubanio.com/simple
+
+    d. 依次输入以下命令，安装 pipenv 工具，并验证其安装成功：
+
+        pip install pipenv
+        pipenv --version
+
+2. 安装 Firefox 浏览器和支持
+
+    a. 访问 Firefox 官网 https://www.mozilla.org/firefox/new/ 下载并安装 Firefox；
+
+    b. 访问 geckodriver 官网 https://github.com/mozilla/geckodriver/releases 下载 geckodriver 解压至项目目录。
+
+3. 配置参数
+
+4. 运行
+
+    双击 run.cmd 自动安装依赖并运行

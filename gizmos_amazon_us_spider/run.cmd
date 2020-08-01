@@ -18,8 +18,8 @@ pipenv update ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
 
-pipenv run pytest ^
-        || ECHO Run pytest failed. ^
+pipenv run python main.py ^
+        || ECHO Run main.py failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 4
 
