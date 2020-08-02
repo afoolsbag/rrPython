@@ -4,7 +4,7 @@ url = 'https://pypi.doubanio.com/simple'
 verify_ssl = true
 
 [packages]
-selenium = "*"
+selenium = '*'
 
 [requires]
 python_version = '3'

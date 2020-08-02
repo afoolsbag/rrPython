@@ -24,6 +24,12 @@
 
 3. 配置参数
 
+    编辑 main.py 源码中第 33 行开始的三项配置
+
+    *对于文本文件，【应使用】文本编辑器如 Notepad 编辑，【切勿使用】文字编辑器如 Word 编辑*
+
+    *推荐使用微软的开源、免费编辑器 Visual Studio Code，官网 https://code.visualstudio.com/*
+
 4. 运行
 
     双击 run.cmd 自动安装依赖并运行
