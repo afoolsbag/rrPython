@@ -11,7 +11,10 @@ r"""
    - `PEP 3107 -- Function Annotations <https://python.org/dev/peps/pep-3107/>`_
    - `typing — Support for type hints <https://docs.python.org/3/library/typing.html>`_
 """
+__version__ = '2020.09.02'
+__since__ = '2018.01.20'
 __author__ = 'zhengrr'
+__license__ = 'UNLICENSE'
 
 from typing import Any, Tuple
 

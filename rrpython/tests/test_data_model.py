@@ -13,7 +13,10 @@ r"""
    - `PEP 526 -- Syntax for Variable Annotations <https://python.org/dev/peps/pep-0526/>`_
    - `typing — Support for type hints <https://docs.python.org/3/library/typing.html>`_
 """
+__version__ = '2020.09.02'
+__since__ = '2018.01.20'
 __author__ = 'zhengrr'
+__license__ = 'UNLICENSE'
 
 
 def test_none():

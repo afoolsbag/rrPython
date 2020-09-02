@@ -13,15 +13,10 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-pipenv update ^
-        || ECHO Updates dependencies failed. ^
-        && CALL :pause_if_double_click ^
-        && EXIT /B 3
-
 pipenv run pytest ^
         || ECHO Run pytest failed. ^
         && CALL :pause_if_double_click ^
-        && EXIT /B 4
+        && EXIT /B 3
 
 CALL :pause_if_double_click
 EXIT /B 0

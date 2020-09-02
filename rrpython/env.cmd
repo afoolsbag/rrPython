@@ -15,7 +15,7 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-pipenv update ^
+pipenv update --dev ^
         || ECHO Updates dependencies failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
@@ -35,7 +35,7 @@ CD "%script_directory%\.." ^
         && CALL :pause_if_double_click ^
         && EXIT /B 6
 
-pipenv update ^
+pipenv update --dev ^
         || ECHO Updates dependencies failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 7
