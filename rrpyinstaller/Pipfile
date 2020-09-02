@@ -1,0 +1,13 @@
+[[source]]
+name = 'pypi'
+url = 'https://pypi.doubanio.com/simple'
+verify_ssl = true
+
+[requires]
+python_version = '3'
+
+[packages]
+
+[dev-packages]
+pyinstaller = '*'
+pyinstaller-versionfile = '*'
