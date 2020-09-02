@@ -8,26 +8,15 @@ WHERE /Q pipenv ^
         && CALL :pause_if_double_click ^
         && EXIT /B 1
 
-CD %script_directory% ^
+CD "%script_directory%" ^
         || ECHO Change directory to project directory failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-pipenv update ^
-        || ECHO Updates dependencies failed. ^
-        && CALL :pause_if_double_click ^
-        && EXIT /B 3
-
-:: 启用 jupyter contrib nbextensions 扩展
-pipenv run jupyter contrib nbextension install --sys-prefix 1>NUL 2>NUL ^
-        || ECHO Install jupyter contrib nbextension failed. ^
-        && CALL :pause_if_double_click ^
-        && EXIT /B 4
-
-pipenv run jupyter notebook ^
+pipenv run jupyter notebook --notebook-dir="ipynb" ^
         || ECHO Run jupyter notebook failed. ^
         && CALL :pause_if_double_click ^
-        && EXIT /B 5
+        && EXIT /B 3
 
 CALL :pause_if_double_click
 EXIT /B 0

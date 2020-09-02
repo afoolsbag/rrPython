@@ -3,10 +3,12 @@ name = "pypi"
 url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
 
-[packages]
-jupyter = "*"
-notebook = "*"
-tensorflow = "*"
-
 [requires]
 python_version = "3"
+
+[packages]
+tensorflow = "*"
+
+[dev-packages]
+jupyter = "*"
+notebook = "*"

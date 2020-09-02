@@ -3,12 +3,14 @@ name = "pypi"
 url = "https://pypi.doubanio.com/simple"
 verify_ssl = true
 
-[packages]
-ipympl = "*"
-jupyter = "*"
-matplotlib = "*"
-notebook = "*"
-numpy = "*"
-
 [requires]
 python_version = "3"
+
+[packages]
+matplotlib = "*"
+numpy = "*"
+
+[dev-packages]
+ipympl = "*"  # for matplotlib
+jupyter = "*"
+notebook = "*"
