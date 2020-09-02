@@ -3,6 +3,7 @@ CHCP 65001
 SETLOCAL ENABLEEXTENSIONS
 SET script_directory=%~dp0
 FOR %%I IN (.) DO SET script_directory_name=%%~nxI%%~xI
+SET source_directory_name=%script_directory_name%
 
 WHERE /Q pipenv ^
         || ECHO The pipenv executable not found. ^
@@ -14,8 +15,8 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-pipenv run python "%script_directory_name%" ^
-        || ECHO Run python %script_directory_name% failed. ^
+pipenv run python "%source_directory_name%" ^
+        || ECHO Run python %source_directory_name% failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
 
