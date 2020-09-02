@@ -28,6 +28,7 @@ pipenv run create-version-file --outfile "build\version_file.txt" ^
 
 pipenv run pyinstaller --onefile --name "%source_directory_name%" ^
                        --add-data "%script_directory%\data";"data" ^
+                       --paths "%source_directory_name%" ^
                        --console --icon "data\icon.ico" ^
                        --version-file "build/version_file.txt" ^
                        "%source_directory_name%\__main__.py" ^
