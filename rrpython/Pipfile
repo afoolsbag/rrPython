@@ -3,10 +3,10 @@ name = 'pypi'
 url = 'https://pypi.doubanio.com/simple'
 verify_ssl = true
 
-[dev-packages]
-pytest = '*'
+[requires]
+python_version = '3'
 
 [packages]
 
-[requires]
-python_version = '3'
+[dev-packages]
+pytest = '*'
