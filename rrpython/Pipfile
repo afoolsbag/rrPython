@@ -9,4 +9,5 @@ python_version = '3'
 [packages]
 
 [dev-packages]
+mypy = '*'
 pytest = '*'
