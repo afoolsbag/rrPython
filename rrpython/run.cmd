@@ -19,10 +19,13 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
+SETLOCAL
+SET PYTHONPATH=%script_directory%;%PYTHONPATH%
 pipenv run python "%source_directory_name%" %* ^
         || ECHO Run python %source_directory_name% failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
+ENDLOCAL
 
 CALL :pause_if_double_click
 EXIT /B 0

@@ -3,7 +3,11 @@ CHCP 65001
 SETLOCAL ENABLEEXTENSIONS
 SET script_directory=%~dp0
 FOR %%I IN (.) DO SET script_directory_name=%%~nxI%%~xI
-SET source_directory_name=%script_directory_name%
+IF EXIST "%script_directory%%script_directory_name%" (
+        SET source_directory_name=%script_directory_name%
+) ELSE (
+        SET source_directory_name=_%script_directory_name%
+)
 
 WHERE /Q pipenv ^
         || ECHO The pipenv executable not found. ^
@@ -28,7 +32,6 @@ pipenv run create-version-file --outfile "build\version_file.txt" ^
 
 pipenv run pyinstaller --onefile --name "%source_directory_name%" ^
                        --add-data "%script_directory%\data";"data" ^
-                       --paths "%source_directory_name%" ^
                        --console --icon "data\icon.ico" ^
                        --version-file "build/version_file.txt" ^
                        "%source_directory_name%\__main__.py" ^
