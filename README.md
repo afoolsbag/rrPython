@@ -31,24 +31,30 @@
 [*Awesome Python*](https://awesome-python.com/) <sub>
     [*cmn-Hans*](http://python.jobbole.com/84464) </sub>
 
-*   [*Jupyter*](https://jupyter.org/)
-*   [*Matplotlib*](https://matplotlib.org/) <sub>
+*   [*Jupyter*](https://jupyter.org/) 交互式计算
+*   [*Loguru*](https://github.com/Delgan/loguru) 日志
+*   [*Matplotlib*](https://matplotlib.org/) 数据可视化 <sub>
         [*cmn-Hans*](https://matplotlib.org.cn/) </sub>
-*   [*NumPy*](https://numpy.org/) <sub>
+*   [*NumPy*](https://numpy.org/) 科学计算 <sub>
         [*cmn-Hans*](https://numpy.org.cn/) </sub>
-*   [*pandas*](https://pandas.pydata.org/) <sub>
+*   [*Orator*](https://github.com/sdispater/orator) 对象关系映射
+*   [*pandas*](https://pandas.pydata.org/) 数据分析和处理 <sub>
         [*cmn-Hans*](https://pypandas.cn/) </sub>
-*   [*pipenv*](https://pypi.org/project/pipenv/)
-*   [*PyCharm*](https://jetbrains.com/pycharm "一款集成开发环境") <sub>
+*   [*Pipenv*](https://pypi.org/project/pipenv/) 开发工作流
+*   [*profig*](https://github.com/dhagrow/profig) 配置
+*   [*PyCharm*](https://jetbrains.com/pycharm) 集成开发环境 <sub>
         [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm) </sub>
-*   [*pytest*](https://pytest.org/)
-*   [*PyTorch*](https://pytorch.org/) <sub>
+*   [*pytest*](https://pytest.org/) 测试框架
+*   [*PyTorch*](https://pytorch.org/) 机器学习框架 <sub>
         [*cmn-Hans*](https://pytorch.apachecn.org/),
         [*man cmn-Hans*](https://github.com/zergtant/pytorch-handbook),
         [*doc cmn-Hans*](https://pytorch-cn.readthedocs.io/zh/latest/) </sub>
-*   [*SciPy*](https://scipy.org/)
-*   [*SymPy*](https://sympy.org/)
-*   [*TensorFlow*](https://tensorflow.google.cn) <sub>
+*   [*schedule*](https://github.com/dbader/schedule) 计划任务
+*   [*Schematics*](https://github.com/schematics/schematics) 数据验证 
+*   [*SciPy*](https://scipy.org/) 用于数学、科学和工程的开源软件生态
+*   [*sh*](https://github.com/amoffat/sh) 子进程
+*   [*SymPy*](https://sympy.org/) 符号数学
+*   [*TensorFlow*](https://tensorflow.google.cn) 机器学习框架 <sub>
         [*cmn-Hans*](http://tensorfly.cn/) </sub>
 
 ### Python 运行时 CPython
@@ -111,7 +117,7 @@
 
 ### Python 环境管理器 Pipenv
 
-```
+```cmder
 %USERPROFILE% λ pip install pipenv
 
 %USERPROFILE% λ pipenv {--three | --two}
