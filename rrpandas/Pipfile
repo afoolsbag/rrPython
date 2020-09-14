@@ -1,17 +1,17 @@
 [[source]]
-name = "pypi"
-url = "https://pypi.doubanio.com/simple"
+name = 'pypi'
+url = 'https://pypi.doubanio.com/simple'
 verify_ssl = true
 
 [requires]
-python_version = "3"
+python_version = '3'
 
 [packages]
-matplotlib = "*"
-numpy = "*"
-pandas = "*"
+matplotlib = '*'
+numpy = '*'
+pandas = '*'
 
 [dev-packages]
-ipympl = "*"  # for matplotlib
-jupyter = "*"
-notebook = "*"
+ipympl = '*'  # for matplotlib
+jupyter = '*'
+notebook = '*'

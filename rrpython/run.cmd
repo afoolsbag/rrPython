@@ -3,7 +3,7 @@ CHCP 65001
 SETLOCAL ENABLEEXTENSIONS
 SET script_directory=%~dp0
 FOR %%I IN (.) DO SET script_directory_name=%%~nxI%%~xI
-IF EXIST "%script_directory%%script_directory_name%" (
+IF EXIST "%script_directory%\%script_directory_name%" (
         SET source_directory_name=%script_directory_name%
 ) ELSE (
         SET source_directory_name=_%script_directory_name%

@@ -1,14 +1,14 @@
 [[source]]
-name = "pypi"
-url = "https://pypi.doubanio.com/simple"
+name = 'pypi'
+url = 'https://pypi.doubanio.com/simple'
 verify_ssl = true
 
 [requires]
-python_version = "3"
+python_version = '3'
 
 [packages]
-tensorflow = "*"
+tensorflow = '*'
 
 [dev-packages]
-jupyter = "*"
-notebook = "*"
+jupyter = '*'
+notebook = '*'
