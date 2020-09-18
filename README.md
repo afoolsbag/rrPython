@@ -52,6 +52,7 @@
         [*cmn-Hans*](https://pytorch.apachecn.org/),
         [*man cmn-Hans*](https://github.com/zergtant/pytorch-handbook),
         [*doc cmn-Hans*](https://pytorch-cn.readthedocs.io/zh/latest/) </sub>
+*   [*sandman2*](https://github.com/jeffknupp/sandman2) 为数据库提供 RESTful 接口
 *   [*schedule*](https://github.com/dbader/schedule) 计划任务
 *   [*Schematics*](https://github.com/schematics/schematics) 数据验证 
 *   [*SciPy*](https://scipy.org/) 用于数学、科学和工程的开源软件生态
