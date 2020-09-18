@@ -3,6 +3,8 @@
 
 r"""
 应用辅助，提供常用基础设施。
+
+Origin: https://github.com/afoolsbag/rrPython/blob/master/rrpyinstaller/rrpyinstaller/appaux.py
 """
 __version__ = '2020.09.18'
 __since__ = '2020.08.17'
