@@ -10,9 +10,11 @@
     [*doc*](https://docs.python.org/3.1/documenting/ "Documenting Python") </sub>
 
 [*Sphinx*](https://www.sphinx-doc.org/) <sub>
-    [*Sphinx and RST syntax guide*](https://thomas-cokelaer.info/tutorials/sphinx/) </sub>
-
-[*reStructuredText*](http://docutils.sourceforge.net/rst.html)
+    [*reStructuredText Style*](https://www.sphinx-doc.org/en/master/usage/restructuredtext),
+    [*Google Style*](https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html),
+    [*NumPy Style*](https://www.sphinx-doc.org/en/master/usage/extensions/example_numpy.html) </sub>
+*   [*reStructuredText*](http://docutils.sourceforge.net/rst.html)
+*   [*numpydoc docstring guide*](https://numpydoc.readthedocs.io/en/latest/format.html)
 
 ## 风格
 
@@ -31,6 +33,7 @@
 [*Awesome Python*](https://awesome-python.com/) <sub>
     [*cmn-Hans*](http://python.jobbole.com/84464) </sub>
 
+*   [*docopt*](http://docopt.org/) 命令行参数
 *   [*Jupyter*](https://jupyter.org/) 交互式计算
 *   [*Loguru*](https://github.com/Delgan/loguru) 日志
 *   [*Matplotlib*](https://matplotlib.org/) 数据可视化 <sub>
