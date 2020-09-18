@@ -6,6 +6,8 @@ r"""
 
 Usage:
   rrpyinstaller [options]
+
+  rrpyinstaller --test
   rrpyinstaller (-h | --help)
   rrpyinstaller --version
 
