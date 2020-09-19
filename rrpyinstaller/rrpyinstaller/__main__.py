@@ -6,7 +6,6 @@ r"""
 
 Usage:
   rrpyinstaller [options]
-  rrpyinstaller --test
   rrpyinstaller (-h | --help)
   rrpyinstaller --version
 
@@ -19,7 +18,7 @@ Options:
   -h --help          Show help message and exit.
   --version          Show version and exit.
 """
-__version__ = '2020.09.18'
+__version__ = '2020.09.19'
 __since__ = '2020.08.17'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'
