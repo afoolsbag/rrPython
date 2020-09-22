@@ -5,7 +5,7 @@ r"""
 使用 Python 构建命令行应用的示例项目。
 
 Usage:
-  rrpyinstaller [options]
+  rrpyinstaller [options] [--test]
   rrpyinstaller --test
   rrpyinstaller (-h | --help)
   rrpyinstaller --version
@@ -15,11 +15,11 @@ Options:
 
   --save             Save options to configuration file.
 
-  --test             Test configurations and exit.
+  --test             Test arguments and exit.
   -h --help          Show help message and exit.
   --version          Show version and exit.
 """
-__version__ = '2020.09.18'
+__version__ = '2020.09.22'
 __since__ = '2020.08.17'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'

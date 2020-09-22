@@ -6,7 +6,7 @@ r"""
 
 Origin: https://github.com/afoolsbag/rrPython/blob/master/rrpyinstaller/rrpyinstaller/appaux.py
 """
-__version__ = '2020.09.18'
+__version__ = '2020.09.22'
 __since__ = '2020.08.17'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'
@@ -16,7 +16,7 @@ from distutils.util import strtobool
 from os.path import abspath, dirname, join
 from re import sub
 import sys
-from typing import Any, Dict, List, Union
+from typing import Any, Dict, ItemsView, KeysView, List, Union, ValuesView
 
 from docopt import docopt
 from profig import Config
@@ -115,6 +115,18 @@ class BaseAppArgs:
     >>> args = AppArgs(source='path/to/config.ini', doc='docopt doc...', version='1.3.3.7')
     """
 
+    @staticmethod
+    def attrname(name: str) -> str:
+        r"""
+        将任意名称转换为属性名。
+        """
+        tmp = sub(r'[^\d\w]', '_', name).strip('_').lower()
+        if not tmp:
+            raise ValueError(f'The name can\'t convert to an attrname: "{name}".')
+        if tmp[0:1].isdigit():
+            tmp = '_' + tmp
+        return tmp
+
     def __init__(self, *,
                  source: str, encoding: str = 'utf-8', strict: bool = True,
                  doc: str, version: Any):
@@ -158,7 +170,7 @@ class BaseAppArgs:
         for docopt_key, docopt_value in self.__docopt_dict.items():
             if docopt_value is None:
                 continue
-            field_key = sub(r'[^\w]', '_', docopt_key).strip('_').lower()  # 规整化参数名
+            field_key = self.attrname(docopt_key)  # 规整化参数名
             for field in fields(self):
                 if field.name != field_key:
                     continue
@@ -211,3 +223,30 @@ class BaseAppArgs:
         获取 docopt.docopt 返回的原始字典项。
         """
         return self.__docopt_dict[item]
+
+    def items(self) -> ItemsView:
+        r"""
+        获取 docopt.docopt 返回的原始字典项的项视图。
+        """
+        return self.__docopt_dict.items()
+
+    def keys(self) -> KeysView:
+        r"""
+        获取 docopt.docopt 返回的原始字典项的键视图。
+        """
+        return self.__docopt_dict.keys()
+
+    def values(self) -> ValuesView:
+        r"""
+        获取 docopt.docopt 返回的原始字典项的值视图。
+        """
+        return self.__docopt_dict.values()
+
+    def kwargs(self) -> Dict:
+        r"""
+        获取 docopt.docopt 返回的原始字典项，将其中的键规整化，以便于用作 ``**kwargs`` 参数。
+        """
+        tmp = {}
+        for key, value in self.__docopt_dict.items():
+            tmp[self.attrname(key)] = value
+        return tmp
