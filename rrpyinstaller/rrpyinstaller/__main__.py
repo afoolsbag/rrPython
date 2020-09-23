@@ -40,7 +40,7 @@ class AppArgs(BaseAppArgs):
     option: str = 'default value'
 
 
-@logger.catch
+@logger.catch(reraise=True)
 def main():
     # 日志
     logger.add(component_path(f'{rrpyinstaller.__name__}.log'), retention='1 week')
@@ -56,4 +56,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    try:
+        main()
+    except:  # noqa
+        exit(1)
