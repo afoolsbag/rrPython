@@ -19,7 +19,7 @@ Options:
   -h --help          Show help message and exit.
   --version          Show version and exit.
 """
-__version__ = '2020.09.22'
+__version__ = '2020.09.23'
 __since__ = '2020.08.17'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'
@@ -58,5 +58,5 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except:  # noqa
+    except Exception:  # noqa
         exit(1)
