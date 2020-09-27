@@ -6,13 +6,13 @@ r"""
 
 ::
 
-    Iterable: __iter__
+    Iterable: obj.__iter__(self)  # iter(obj)
 
 Notes
 -----
 - `可迭代类型 <https://docs.python.org/zh-cn/3/library/typing.html#typing.Iterable>`_
 """
-__version__ = '2020.09.24'
+__version__ = '2020.09.27'
 __since__ = '2020.09.24'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'

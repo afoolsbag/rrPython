@@ -14,10 +14,6 @@ r"""
                 |
             +-> Collection
             |
-            |   +-> Iterable: __iter__
-            |   |
-            +-> Reversible: __reversed__
-            |
         +-> Mapping: __eq__
         |            __getitem__
         |            __ne__

@@ -6,27 +6,27 @@ r"""
 
 ::
 
-        +-> Container: __contains__
+        +-> Container: obj.__contains__(self, item)  # item in obj
         |
-        +-> Sized: __len__
+        +-> Sized: obj.__len__(self)  # len(obj)
         |
-        +-> Iterable: __iter__
+        +-> Iterable: obj.__iter__(self)  # iter(obj)
         |
     +-> Collection
     |
-    |   +-> Iterable: __iter__
+    |   +-> Iterable: obj.__iter__(self)  # iter(obj)
     |   |
-    +-> Reversible: __reversed__
+    +-> Reversible: obj.__reversed__(self)  # reversed(obj)
     |
-    Sequence: __getitem__
-              count
-              index
+    Sequence: obj.__getitem__(self, index)  # obj[index]
+              obj.count(self, value)
+              obj.index(self, value, start=0, stop=None)
 
 Notes
 -----
 - `序列类型 <https://docs.python.org/zh-cn/3/library/typing.html#typing.Sequence>`_
 """
-__version__ = '2020.09.24'
+__version__ = '2020.09.27'
 __since__ = '2020.09.24'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'

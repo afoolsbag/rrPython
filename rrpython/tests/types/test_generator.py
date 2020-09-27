@@ -6,13 +6,13 @@ r"""
 
 ::
 
-        +-> Iterable: __iter__
+        +-> Iterable: obj.__iter__(self)  # iter(obj)
         |
-    +-> Iterator: __next__
+    +-> Iterator: obj.__next__(self)  # next(obj)
     |
-    Generator: close
-               throw
-               send
+    Generator: obj.close(self)
+               obj.throw(self, typ, val=None, tb=None)
+               obj.send(self, value)
 
 Notes
 -----

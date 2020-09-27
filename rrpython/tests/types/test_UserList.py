@@ -6,31 +6,31 @@ r"""
 
 ::
 
-                +-> Container: __contains__
+                +-> Container: obj.__contains__(self, item)  # item in obj
                 |
-                +-> Sized: __len__
+                +-> Sized: obj.__len__(self)  # len(obj)
                 |
-                +-> Iterable: __iter__
+                +-> Iterable: obj.__iter__(self)  # iter(obj)
                 |
             +-> Collection
             |
-            |   +-> Iterable: __iter__
+            |   +-> Iterable: obj.__iter__(self)  # iter(obj)
             |   |
-            +-> Reversible: __reversed__
+            +-> Reversible: obj.__reversed__(self)  # reversed(obj)
             |
-        +-> Sequence: __getitem__
-        |             count
-        |             index
+        +-> Sequence: obj.__getitem__(self, index)  # obj[index]
+        |             obj.count(self, value)
+        |             obj.index(self, value, start=0, stop=None)
         |
-    +-> MutableSequence: __delitem__
-    |                    __iadd__
-    |                    __setitem__
-    |                    append
-    |                    extend
-    |                    insert
-    |                    pop
-    |                    remove
-    |                    reverse
+    +-> MutableSequence: obj.__delitem__(self, index)         # del obj[index]
+    |                    obj.__iadd__(self, rhv)              # obj += rhv
+    |                    obj.__setitem__(self, index, value)  # obj[index] = value
+    |                    obj.append(self, value)
+    |                    obj.extend(self, values)
+    |                    obj.insert(self, index, value)
+    |                    obj.pop(self, index=-1)
+    |                    obj.remove(self, value)
+    |                    obj.reverse(self)
     |
     UserList
 
@@ -38,7 +38,7 @@ Notes
 -----
 - `列表包装类型 <https://docs.python.org/zh-cn/3/library/collections.html#userlist-objects>`_
 """
-__version__ = '2020.09.26'
+__version__ = '2020.09.27'
 __since__ = '2020.09.26'
 __author__ = 'zhengrr'
 __license__ = 'UNLICENSE'
