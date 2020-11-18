@@ -8,7 +8,6 @@
     *   [语言参考](https://docs.python.org/zh-cn/3/reference/index.html)
     *   [标准库参考](https://docs.python.org/zh-cn/3/library/index.html)
 
-\ 
 
 *   [Sphinx](https://www.sphinx-doc.org/zh_CN/master/)
     *   [reStructuredText 风格](https://www.sphinx-doc.org/zh_CN/master/usage/restructuredtext/index.html)  
