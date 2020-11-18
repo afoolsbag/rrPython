@@ -56,6 +56,33 @@
 *   [SymPy](https://sympy.org/) 符号数学
 *   [TensorFlow](https://tensorflow.google.cn) ([cmn-Hans](http://tensorfly.cn/)) 机器学习框架
 
+### CPython 版本管理器 pyenv
+
+``` batch
+:: 更新元数据
+%USERPROFILE%> pyenv update
+
+:: 列出可用版本
+%USERPROFILE%> pyenv install -l
+
+:: 下载某版本
+%USERPROFILE%> pyenv install <version>
+
+:: 列出已安装版本
+%USERPROFILE%> pyenv versions
+
+:: 选择全局版本
+%USERPROFILE%> pyenv global <version>
+
+:: 同步垫片
+%USERPROFILE%> pyenv rehash
+```
+
+参见：
+
+*   [pyenv: Simple Python version management](https://github.com/pyenv/pyenv)
+*   [pyenv for Windows | pyenv-win](https://pyenv-win.github.io/pyenv-win/)
+
 ### Python 运行时 CPython
 
 ``` batch
