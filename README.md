@@ -63,12 +63,12 @@
 %USERPROFILE%> pyenv update
 
 :: 列出可用版本
-%USERPROFILE%> pyenv install -l
+%USERPROFILE%> pyenv install --list
 
 :: 下载某版本
 %USERPROFILE%> pyenv install <version>
 
-:: 列出已安装版本
+:: 列出已知版本
 %USERPROFILE%> pyenv versions
 
 :: 选择全局版本
