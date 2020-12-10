@@ -24,6 +24,13 @@ pipenv run mypy "%source_directory_name%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
 
+IF EXIST "%script_directory%\tests" (
+        pipenv run mypy "tests" ^
+                || ECHO Run mypy tests failed. ^
+                && CALL :pause_if_double_click ^
+                && EXIT /B 4
+)
+
 CALL :pause_if_double_click
 EXIT /B 0
 
