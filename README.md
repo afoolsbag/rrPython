@@ -43,7 +43,7 @@
 *   [pandas](https://pandas.pydata.org/) ([cmn-Hans](https://pypandas.cn/)) 数据分析和处理
 *   [Pipenv](https://pypi.org/project/pipenv/) 开发工作流
 *   [profig](https://github.com/dhagrow/profig) 配置
-*   [PyCharm](https://jetbrains.com/pycharm) ([zh_CN](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm)) 集成开发环境
+*   [PyCharm](https://jetbrains.com/pycharm) ([~~zh_CN~~](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/PyCharm "已有官译插件")) 集成开发环境
 *   [pytest](https://pytest.org/) 测试框架
 *   [PyTorch](https://pytorch.org/) ([cmn-Hans](https://pytorch.apachecn.org/)) 机器学习框架
     *   [man cmn-Hans](https://github.com/zergtant/pytorch-handbook)
