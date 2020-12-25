@@ -59,6 +59,12 @@
 ### CPython 版本管理器 pyenv
 
 ``` batch
+:: 使用 Scoop 安装 pyenv
+%USERPROFILE%> scoop install pyenv
+
+:: 为 pyenv 配置 Python 镜像
+%USERPROFILE%> SETX PYTHON_BUILD_MIRROR_URL https://npm.taobao.org/mirrors/python/
+
 :: 更新元数据
 %USERPROFILE%> pyenv update
 
@@ -80,6 +86,7 @@
 
 参见：
 
+*   [Python Mirror](https://npm.taobao.org/mirrors/python/)
 *   [pyenv: Simple Python version management](https://github.com/pyenv/pyenv)
 *   [pyenv for Windows | pyenv-win](https://pyenv-win.github.io/pyenv-win/)
 
@@ -87,7 +94,7 @@
 
 ``` batch
 :: 使用 Scoop 安装 CPython
-%USERPROFILE%> scoop install python
+:: %USERPROFILE%> scoop install python
 
 :: 交互式 Python 壳层
 %USERPROFILE%> pip install ipython
@@ -150,19 +157,23 @@
 ### Python 环境管理器 Pipenv
 
 ``` batch
+:: 全局安装 Pipenv 工具
 %USERPROFILE%> pip install pipenv
 
+:: 初始化项目
 %USERPROFILE%> pipenv {--three | --two}
 
+:: 重置 virtualenv 环境
+%USERPROFILE%> pipenv --rm
+
+:: 安装包
 %USERPROFILE%> pipenv install [--dev] <package>
 :: abbr.       pipenv install [-d] <package>
 
+:: 卸载包
 %USERPROFILE%> pipenv uninstall <package>
 
-%USERPROFILE%> pipenv lock
-
-%USERPROFILE%> pipenv sync
-
+:: 运行脚本（调用包）
 %USERPROFILE%> pipenv run python <script.py>
 ```
 
